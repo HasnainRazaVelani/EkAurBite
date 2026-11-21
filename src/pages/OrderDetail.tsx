@@ -261,7 +261,7 @@ export default function OrderDetailPage() {
       {/* Mark Paid Modal */}
       {payModal && (
         <div className="fixed inset-0 z-50 flex items-end md:items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
-          <div className="glass rounded-2xl w-full max-w-sm p-6 animate-slide-up">
+          <div className="modal-glass rounded-2xl w-full max-w-sm p-6 animate-slide-up">
             <h3 className="text-lg font-bold mb-1">Mark as Paid</h3>
             <p className="text-muted-foreground text-sm mb-4">Order #{order.order_number} · <Currency amount={order.total_selling} /></p>
             <div className="grid grid-cols-2 gap-2 mb-5">
