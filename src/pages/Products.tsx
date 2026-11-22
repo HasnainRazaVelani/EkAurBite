@@ -243,8 +243,8 @@ export default function ProductsPage() {
 
       {/* ── Add/Edit Modal ─────────────────────────── */}
       {modal.open && (
-        <div className="fixed inset-0 z-50 overflow-y-auto flex items-end md:items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
-          <div className="modal-glass rounded-2xl w-full max-w-lg p-6 animate-slide-up my-auto">
+        <div className="fixed inset-0 z-50 overflow-y-auto flex items-end md:items-center justify-center p-4 pb-8 md:pb-4 bg-black/70 backdrop-blur-sm">
+          <div className="bg-zinc-900 rounded-2xl border border-white/10 shadow-2xl w-full max-w-lg p-6 animate-slide-up my-auto">
             <h2 className="text-lg font-bold font-display mb-5">
               {modal.editing ? 'Edit Product' : 'Add Product'}
             </h2>
@@ -341,8 +341,8 @@ export default function ProductsPage() {
 
       {/* Delete confirm */}
       {deleteConfirm && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
-          <div className="modal-glass rounded-2xl w-full max-w-sm p-6 text-center animate-slide-up">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
+          <div className="bg-zinc-900 rounded-2xl border border-white/10 shadow-2xl w-full max-w-sm p-6 text-center animate-slide-up">
             <div className="text-4xl mb-3">🗑️</div>
             <h3 className="text-lg font-bold mb-2">Delete Product?</h3>
             <p className="text-muted-foreground text-sm mb-6">This product will be removed from your list.</p>
