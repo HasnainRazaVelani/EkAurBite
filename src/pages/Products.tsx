@@ -111,8 +111,13 @@ export default function ProductsPage() {
 
       let photoUrl = modal.editing?.photo_url ?? undefined
       if (fPhoto) {
-        const id = modal.editing?.id ?? crypto.randomUUID()
-        photoUrl = await uploadProductPhoto(fPhoto, id)
+        try {
+          const id = modal.editing?.id ?? crypto.randomUUID()
+          photoUrl = await uploadProductPhoto(fPhoto, id)
+        } catch {
+          // Storage bucket not configured — save without photo
+          console.warn('Photo upload failed, saving without photo')
+        }
       }
 
       if (modal.editing) {
