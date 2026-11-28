@@ -122,9 +122,10 @@
 
   /* Opaque solid background for modals */
   .modal-glass {
-    background: hsl(240, 10%, 8%);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.8);
+    background: var(--card);
+    color: var(--card-foreground);
+    border: 1px solid var(--border);
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
   }
 
   /* Gradient brand */

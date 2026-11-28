@@ -18,7 +18,7 @@ const navItems = [
 
 export function BottomNav() {
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-40 bg-[hsl(240,10%,6%)] border-t border-border safe-area-pb md:hidden">
+    <nav className="fixed bottom-0 left-0 right-0 z-40 bg-card border-t border-border safe-area-pb md:hidden">
       <div className="flex items-center justify-around px-2 py-2">
         {navItems.slice(0, 5).map(({ to, icon: Icon, label }) => (
           <NavLink
@@ -56,7 +56,7 @@ export function SidebarNav() {
   const location = useLocation()
 
   return (
-    <aside className="hidden md:flex flex-col w-64 min-h-screen bg-[hsl(240,10%,6%)] border-r border-border p-4 fixed left-0 top-0 z-40">
+    <aside className="hidden md:flex flex-col w-64 min-h-screen bg-card border-r border-border p-4 fixed left-0 top-0 z-40">
       {/* Logo */}
       <div className="mb-8 px-2 pt-2">
         <div className="flex items-center gap-3">

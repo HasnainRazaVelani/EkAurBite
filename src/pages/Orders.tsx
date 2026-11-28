@@ -213,7 +213,7 @@ export default function OrdersPage() {
       {/* Mark Paid Modal */}
       {statusModal && (
         <div className="fixed inset-0 z-[9999] flex items-end md:items-center justify-center p-4 pb-8 md:pb-4 bg-black/70 backdrop-blur-sm">
-          <div className="bg-zinc-900 rounded-2xl border border-white/10 shadow-2xl w-full max-w-sm p-6 animate-slide-up">
+          <div className="modal-glass rounded-2xl w-full max-w-sm p-6 animate-slide-up">
             <h3 className="text-lg font-bold mb-1">Mark as Paid</h3>
             <p className="text-muted-foreground text-sm mb-4">Order #{statusModal.order.order_number} · <Currency amount={statusModal.order.total_selling} /></p>
             <div>
@@ -247,7 +247,7 @@ export default function OrdersPage() {
       {/* Delete confirm */}
       {deleteConfirm && (
         <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
-          <div className="bg-zinc-900 rounded-2xl border border-white/10 shadow-2xl w-full max-w-sm p-6 text-center animate-slide-up">
+          <div className="modal-glass rounded-2xl w-full max-w-sm p-6 text-center animate-slide-up">
             <div className="text-4xl mb-3">🗑️</div>
             <h3 className="text-lg font-bold mb-2">Delete Order?</h3>
             <p className="text-muted-foreground text-sm mb-6">This cannot be undone.</p>
@@ -263,4 +263,5 @@ export default function OrdersPage() {
     </div>
   )
 }
+
 
