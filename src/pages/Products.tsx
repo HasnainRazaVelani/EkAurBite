@@ -174,11 +174,11 @@ export default function ProductsPage() {
           action={<Button onClick={openAdd} className="gradient-brand border-0 text-white gap-2"><Plus size={16} /> Add First Product</Button>}
         />
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
           {filtered.map(p => (
             <div key={p.id} className="glass rounded-2xl overflow-hidden border border-border card-hover">
               {/* Photo or emoji */}
-              <div className="relative h-32 bg-gradient-to-br from-purple-900/40 to-pink-900/30 flex items-center justify-center">
+              <div className="relative h-24 md:h-32 bg-gradient-to-br from-purple-900/40 to-pink-900/30 flex items-center justify-center">
                 {p.photo_url ? (
                   <img src={p.photo_url} alt={p.name} className="w-full h-full object-cover" />
                 ) : (
@@ -204,11 +204,11 @@ export default function ProductsPage() {
               <div className="p-4">
                 <div className="flex items-start justify-between mb-3">
                   <div>
-                    <h3 className="font-bold text-foreground">{p.name}</h3>
+                    <h3 className="font-bold text-foreground text-sm md:text-base">{p.name}</h3>
                     {p.description && <p className="text-muted-foreground text-xs mt-0.5">{p.description}</p>}
                   </div>
                   <div className="text-right shrink-0 ml-2">
-                    <p className="text-primary font-bold text-lg"><Currency amount={p.default_selling_price} /></p>
+                    <p className="text-primary font-bold text-sm md:text-lg"><Currency amount={p.default_selling_price} /></p>
                     <p className="text-muted-foreground text-xs">sell price</p>
                   </div>
                 </div>
