@@ -1,4 +1,5 @@
 import { PageHeader } from '@/components/shared/Layout'
+import { Portal } from '@/components/shared/Portal'
 import { useAuth } from '@/contexts/AuthContext'
 import { Button } from '@/components/ui/button'
 import { Link } from 'react-router-dom'
@@ -100,3 +101,4 @@ export default function SettingsPage() {
     </div>
   )
 }
+

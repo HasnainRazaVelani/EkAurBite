@@ -120,11 +120,11 @@
     border: 1px solid rgba(255, 255, 255, 0.08);
   }
 
-  /* Opaque glass for modals — solid background so content behind doesn't bleed through */
+  /* Opaque solid background for modals */
   .modal-glass {
-    background: hsl(240, 10%, 10%);
+    background: hsl(240, 10%, 8%);
     border: 1px solid rgba(255, 255, 255, 0.12);
-    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.05);
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.8);
   }
 
   /* Gradient brand */

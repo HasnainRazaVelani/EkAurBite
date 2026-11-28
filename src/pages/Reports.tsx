@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
+import { Portal } from '@/components/shared/Portal'
 import { useAuth } from '@/contexts/AuthContext'
 import { PageHeader, LoadingSpinner } from '@/components/shared/Layout'
 import { Currency } from '@/components/shared/Badges'
@@ -263,3 +264,4 @@ export default function ReportsPage() {
     </div>
   )
 }
+
